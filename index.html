@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <form>
+    <div>
+      <label>FULL NAME</label>
+      <!-- required field -->
+      <input type="text" required/> 
+    </div>
+    <div class="shorter">
+      <!-- Email must be in valid format -->
+      <label for="email">EMAIL</label>
+      <input type="email" id="email" placeholder="Your Email" required/>
+    </div>
+    <div class="shorter">
+      <label for="topic">MESSAGE REGARDING</label>
+      <input type="text" id="topic" />
+    </div>
+    <div>
+      <!-- Message must be filled -->
+      <label for="message">MESSAGE</label>
+      <input type="text" id="message" placeholder="Your Message" required/>
+    </div>
+    <div>
+      <button type="submit">SEND MESSAGE</button>
+    </div>
+  </form>
+  <div id="img-area">
+    <img src="images/duck.png" alt="duck" />
+  </div>
+</body>
+</html>
